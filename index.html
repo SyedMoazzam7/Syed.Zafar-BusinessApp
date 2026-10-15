@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>RackRight Warehousing | Warehouse Management Service</title>
+  <meta name="description" content="RackRight Warehousing: storage, pick-and-pack and dispatch for small and mid-size businesses, with a live manager dashboard and order tracking.">
+  <link rel="icon" href="images/logo.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="wrap bar">
+      <a class="brand" href="#home" aria-label="RackRight Warehousing home">
+        <img src="images/logo.svg" alt="" width="40" height="40">
+        <span>RackRight</span>
+      </a>
+      <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="nav">Menu</button>
+      <nav id="nav" aria-label="Main">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#dashboard">Dashboard</a>
+        <a href="#track">Track order</a>
+        <a href="#contact" class="nav-cta">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- 1. HOME -->
+    <section id="home" class="hero">
+      <div class="wrap hero-grid">
+        <div>
+          <img class="hero-logo" src="images/logo.svg" alt="RackRight Warehousing logo" width="72" height="72">
+          <h1>RackRight Warehousing</h1>
+          <p class="purpose">We store, pick, pack and dispatch your stock, and show you every number that matters.</p>
+          <p class="lead">Small and growing businesses lose sales to stock-outs, late dispatches and spreadsheets that are always a day old. RackRight gives you managed warehouse space with a live dashboard, so you always know what is in stock, what has shipped and what is waiting.</p>
+          <div class="actions">
+            <a class="btn btn-primary" href="#services">Get Started</a>
+            <a class="btn btn-ghost" href="#dashboard">See the manager dashboard</a>
+          </div>
+        </div>
+        <img class="hero-img" src="images/warehouse-racks.svg" alt="Illustration of warehouse racks loaded with pallets and a yellow floor marking line" width="560" height="420">
+      </div>
+    </section>
+
+    <!-- 2. ABOUT -->
+    <section id="about" class="section">
+      <div class="wrap">
+        <h2>About RackRight</h2>
+        <div class="about-grid">
+          <article>
+            <h3>What we do</h3>
+            <p>RackRight runs a 60,000 sq ft multi-client warehouse. We receive your goods, store them by SKU, pick and pack customer orders, and hand them to your courier the same day.</p>
+          </article>
+          <article>
+            <h3>Who we serve</h3>
+            <p>E-commerce sellers, D2C brands, small manufacturers and distributors who ship 100 to 5,000 orders a month and do not want to run their own warehouse.</p>
+          </article>
+          <article>
+            <h3>Where we operate</h3>
+            <p>Our facility is in Navi Mumbai, close to the JNPT port and the Mumbai-Pune expressway. We dispatch across Maharashtra, Gujarat and Goa, with pan-India courier partners beyond that.</p>
+          </article>
+          <article>
+            <h3>Why customers stay</h3>
+            <p>Stock accuracy above 99%, orders dispatched within 24 hours, and a dashboard you can open any time instead of waiting for an end-of-day report.</p>
+          </article>
+        </div>
+        <p class="note">Compliance matters to us. We follow the warehouse registration rules published by the <a href="https://wdra.gov.in" target="_blank" rel="noopener noreferrer">Warehousing Development and Regulatory Authority (WDRA)</a>, so you can issue electronic warehouse receipts against your stored goods.</p>
+      </div>
+    </section>
+
+    <!-- 3. SERVICES -->
+    <section id="services" class="section alt">
+      <div class="wrap">
+        <h2>Services and pricing</h2>
+        <p class="sub">Pick what you need. Prices are in Indian rupees (₹) and exclude GST.</p>
+        <div class="table-scroll">
+          <table class="services">
+            <thead>
+              <tr><th scope="col">Service</th><th scope="col">Description</th><th scope="col">Price</th><th scope="col"><span class="sr">Action</span></th></tr>
+            </thead>
+            <tbody>
+              <tr><th scope="row">Pallet Storage</th><td>Racked storage for boxed goods, per pallet position</td><td>₹250 / pallet / month</td><td><a href="#contact" data-service="Pallet Storage">Request quote</a></td></tr>
+              <tr><th scope="row">Bulk Floor Storage</th><td>Open floor space for large or heavy items</td><td>₹6 / sq ft / month</td><td><a href="#contact" data-service="Bulk Floor Storage">Request quote</a></td></tr>
+              <tr><th scope="row">Pick &amp; Pack</th><td>Order picking, packing and labelling</td><td>₹15 / order</td><td><a href="#contact" data-service="Pick and Pack">Request quote</a></td></tr>
+              <tr><th scope="row">Same-Day Dispatch</th><td>Orders received by 2 pm leave the same day</td><td>₹40 / order</td><td><a href="#contact" data-service="Same-Day Dispatch">Request quote</a></td></tr>
+              <tr><th scope="row">Cross-Docking</th><td>Unload and reload a truck without storing the goods</td><td>₹1,200 / truck</td><td><a href="#contact" data-service="Cross-Docking">Request quote</a></td></tr>
+              <tr><th scope="row">Inventory Audit</th><td>Full cycle count with a variance report</td><td>₹5,000 / audit</td><td><a href="#contact" data-service="Inventory Audit">Request quote</a></td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="note">Already a customer? <a href="#track">Track one of your orders</a> or <a href="#dashboard">check today's warehouse numbers</a>.</p>
+      </div>
+    </section>
+
+    <!-- 4. DASHBOARD -->
+    <section id="dashboard" class="section">
+      <div class="wrap">
+        <h2>Warehouse manager dashboard</h2>
+        <p class="sub">What the manager needs to know the moment they open the page. Figures are sample data for this week.</p>
+
+        <div class="kpis" id="kpis" aria-live="polite"></div>
+
+        <div class="charts">
+          <figure class="chart-card">
+            <figcaption>Orders received vs dispatched, this week</figcaption>
+            <div id="weekChart" class="chart" role="img" aria-label="Grouped bar chart of orders received and dispatched for each day of the week"></div>
+            <div class="legend"><span class="sw recv"></span>Received <span class="sw disp"></span>Dispatched</div>
+          </figure>
+          <figure class="chart-card">
+            <figcaption>Warehouse utilisation by zone (pallet positions used)</figcaption>
+            <div id="zoneChart" class="chart" role="img" aria-label="Horizontal bar chart of space utilisation in each warehouse zone"></div>
+          </figure>
+        </div>
+
+        <h3 class="mt">Stock-out items needing a reorder</h3>
+        <div class="table-scroll">
+          <table class="services" id="stockoutTable">
+            <thead><tr><th scope="col">SKU</th><th scope="col">Item</th><th scope="col">Client</th><th scope="col">Orders waiting</th></tr></thead>
+            <tbody></tbody>
+          </table>
+        </div>
+        <p class="note">Orders waiting on a stock-out will be delayed. <a href="#track">Open order tracking</a> to see which customers are affected.</p>
+      </div>
+    </section>
+
+    <!-- 5. TRACK ORDER (interactive business feature) -->
+    <section id="track" class="section alt">
+      <div class="wrap narrow">
+        <h2>Track an order</h2>
+        <p class="sub">Enter an order ID to see where it is in the warehouse. Try TRK1025.</p>
+
+        <form id="trackForm" class="track-form" novalidate>
+          <label for="orderId">Order ID</label>
+          <div class="row">
+            <input id="orderId" name="orderId" type="text" placeholder="TRK1025" autocomplete="off" required>
+            <button class="btn btn-primary" type="submit">Track order</button>
+          </div>
+        </form>
+        <p class="chips">Sample IDs:
+          <button type="button" class="chip" data-id="TRK1021">TRK1021</button>
+          <button type="button" class="chip" data-id="TRK1025">TRK1025</button>
+          <button type="button" class="chip" data-id="TRK1027">TRK1027</button>
+          <button type="button" class="chip" data-id="TRK1030">TRK1030</button>
+        </p>
+
+        <div id="trackResult" class="result" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <!-- 6. CONTACT -->
+    <section id="contact" class="section">
+      <div class="wrap">
+        <h2>Contact and enquiry</h2>
+        <div class="contact-grid">
+          <div>
+            <ul class="contact-list">
+              <li><strong>Email</strong><a href="mailto:hello@rackright.example?subject=Warehouse%20enquiry">hello@rackright.example</a></li>
+              <li><strong>Phone</strong><a href="tel:+912200000000">+91 22 0000 0000</a></li>
+              <li><strong>Location</strong><span>Plot 21, Industrial Estate, Navi Mumbai, Maharashtra 400703</span></li>
+              <li><strong>Hours</strong><span>Mon to Sat, 8 am to 8 pm</span></li>
+              <li><strong>Directions</strong><a href="https://www.google.com/maps/search/?api=1&amp;query=Navi+Mumbai+warehouse+Maharashtra" target="_blank" rel="noopener noreferrer">Open in Google Maps</a></li>
+              <li><strong>Company page</strong><a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">RackRight on LinkedIn</a></li>
+            </ul>
+            <a class="btn btn-primary" id="enquiryBtn" href="mailto:hello@rackright.example?subject=Warehouse%20enquiry&amp;body=Name%3A%0ACompany%3A%0AMonthly%20orders%3A%0AService%20needed%3A">Send an enquiry</a>
+            <p class="note">The button opens your email app with a ready-made enquiry. Tell us your monthly order volume and we will reply with a quote within one working day.</p>
+          </div>
+          <aside class="partners">
+            <h3>Industry references</h3>
+            <ul>
+              <li><a href="https://wdra.gov.in" target="_blank" rel="noopener noreferrer">WDRA</a><span>Registration and e-warehouse receipt rules</span></li>
+              <li><a href="https://cewacor.nic.in" target="_blank" rel="noopener noreferrer">Central Warehousing Corporation</a><span>Public-sector warehousing benchmarks</span></li>
+            </ul>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap foot">
+      <span>© 2026 RackRight Warehousing. Class project for ITBT by Syed Moazzam Zafar.</span>
+      <a href="#home">Back to top</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
